@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --navbar1: rgb(2, 86, 82);
+    --navbar2:
+    --bodybackground1: linear-gradient(rgb(19, 17, 17),rgb(1, 1, 83));
+}
+body {
+    background-color: black;
+
+}
+.headerbar {
+   background-color: var(--navbar1);
+   height: 5rem;
+   width: 100%;
+   position: static;
+   /* width: 60%; */
+   /* top: 0%;
+   margin: 0%; */
+}
+.skip {
+    display: inline-block;
+    color: var(--navbar1);
+    width: auto;
+    height: auto;
+    z-index: 1;
+    position: absolute;
+    margin-left: 5%;
+}
+.skip:focus {
+    color: rgb(0, 2, 3);
+    font-weight: 900;
+}
+.navbar { 
+    display: grid;
+    /* background-color: rgb(210, 5, 53); */
+    width: 60%;
+    height: 5rem;
+    grid-template-columns: 2.4fr 2fr 4fr;
+    grid-row: 1fr;
+    margin-right: 20%;
+    margin-left: 20%;
+    /* padding: 0.2rem; */
+    
+}
+.headericon {
+    padding-left: 0rem;
+    /* background-color: blanchedalmond; */
+    grid-column: 1 / 1; 
+    grid-row: 1 / 1;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+}
+.topnav {
+    /* background-color: bisque; */
+    grid-column: 3 / 3;
+    grid-row: auto;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem;
+}
+
+a {
+    color: azure;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+a:hover {
+    scale: 1.2;
+}
+
+h1 {
+    color: azure;
+    text-decoration: none;
+    font-size: 2.2rem;
+    margin: 0.4rem;
+}
+
+.gridmain {
+    height: 400px;
+    width: 50%;
+    display: grid;
+    position: relative;
+    top: 20rem;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: 400px;
+    margin-left: 25%;
+    padding-bottom: 40rem;
+    
+}
+
+.homecolumn1 {
+    /* background-color: blue; */
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    color: aliceblue;
+    padding-right: 1rem;
+    padding-left: 2rem;
+
+}
+
+.astrodab {
+    /* background-color: blueviolet; */
+    grid-column: 2 /2;
+    grid-row: 1 / 1;
+}
+
+.boldtext {
+    font-size: 3rem;
+    font-family:sans-serif;
+}
+
+.purplebold {
+    font-size: 3rem;
+    color: blueviolet;
+    font-family:sans-serif;
+
+}
+
+.maintext {
+    font-size: 2rem;
+    color: rgba(191, 193, 195, 0.648);
+
+}
+
+.packagecards { 
+    width: 60%;
+    margin-left: 20%;
+    height: 30rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 2.5fr 7fr;
+    gap: 1rem;
+    /* background-color: azure; */
+    padding-bottom: 40rem;
+}
+
+ .packages1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+    background-color: rgb(0, 0, 0);
+    border: 5px solid rgba(191, 193, 195, 0.648);
+    border-radius: 2.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+.packages2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    background-color: rgb(0, 0, 0);
+    border: 5px solid rgba(191, 193, 195, 0.648);
+    border-radius: 2.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+.packages3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+    background-color: rgb(0, 0, 0);
+    border: 5px solid rgba(191, 193, 195, 0.648);
+    border-radius: 2.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.packagetitle {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    /* background-color: blue; */
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding-top: 2.5rem;
+    color: azure;
+    
+}
+
+.packages1 p, .packages2 p, .packages3 p {
+    font-size: 2rem;
+    color: rgb(166, 168, 171);
+}
+ 
+/* .largequotes::before {
+    
+} */
+hr {
+    width: 40%;
+    margin-left: 30%;
+}
+
+.testimonialcontainer {
+    width: 50%;
+    margin: 25%;
+    /* background-color: rgb(34, 15, 52); */
+
+}
+
+.largequotes {
+    font-size: 2rem;
+    text-align: left;
+    color: rgb(166, 168, 171);
+    margin-left: 3rem;
+    margin-right: 2rem;
+}
+
+.testimonialsheader {
+    color: aliceblue;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+
+
+}
+
+.author {
+    text-align: end;
+    font-size: 1.5rem;
+    color: rgb(166, 168, 171);
+    margin-bottom: 2.8rem;
+}
+
+.stylequotes {
+    font-size: 4rem;
+    color: rgb(166, 168, 171);
+}
+
+.stylequotesclose {
+    font-size: 4rem;
+    margin: 56rem ;
+    color: rgb(166, 168, 171);
+    /* left: -1rem; */
+}
+
+.contactform {
+    width: 60%;
+    margin: 20%;
+}
+
+.formheader {
+    color: aliceblue;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.Inputtitles {
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: rgb(166, 168, 171);
+    margin-bottom: 1rem;
+
+}
+
+.inputbox {
+    width: 60%;
+    height: 2rem;
+}
+
+.contactform button {
+    color: aliceblue;
+    background-color: var(--navbar1);
+    font-size: 1rem;
+    border-radius: 0.75rem;
+    width: 200px;
+    height: 60px;
+    margin-top: 3rem;
+    font-size: 2rem;
+    /* margin-left: 3rem; */
+}
+
+.contactform button:hover {
+    scale: 1,25;
+}
+
+.footerbar {
+    width: 100%;
+    background-color: var(--navbar1);
+    height: 12rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.footergrid {
+    width: 70%;
+    margin-left: 15%;
+    height: 12rem;
+    /* background-color: crimson; */
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+}
+
+.column {
+    color: rgb(166, 168, 171);
+    grid-column: auto;
+    grid-row: 1 / 1;
+    font-size: 2rem;
+}
+
+.bottomnav {
+    /* background-color: blue; */
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+.column:nth-of-type(3) {
+    padding-left: 3rem;
+
+} 
+
+.bottomnav a:hover{
+    scale: 1.2;
+}
+
+.packages1:hover, .packages2:hover, .packages3:hover {
+    scale: 0.9;
+}
+
+#subject {
+    height: 5rem;
+    margin-bottom: 1rem;
+    width: 70rem;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+#message {
+    height: 15rem;
+    width: 70rem;
+    margin-bottom: 0.2rem;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.submitbutton:hover {
+    scale: 1.1;
+}
